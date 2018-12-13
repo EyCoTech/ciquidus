@@ -5,35 +5,35 @@
 */
 {
   // name your instance!
-  "title": "CIQUIDUS",
+  "title": "Eyco-View",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Chaincoin",
+  "coin": "Eyco",
 
   // coin symbol
-  "symbol": "CHC",
+  "symbol": "EYCO",
 
   // logo
-  "logo": "/images/chain_dark-128x128.png",
+  "logo": "/images/eyco.png",
 
   // favicon
-  "favicon": "public/favicon.ico",
+  "favicon": "public/eyco.ico",
 
   // Uses bootswatch themes (http://bootswatch.com/)
   // Valid options:
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Slate",
+  "theme": "Lumen",
 
   // port to listen for requests on.
   "port" : 3001,
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "ciquidus",
+    "user": "eyco",
     "password": "3xp!0reR",
     "database": "explorerdb",
     "address": "localhost",
@@ -47,13 +47,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 11995,
-    "user": "chaincoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 10823,
+    "user": "eyco",
+    "pass": "password"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 66,
 
   // language settings
   "locale": "locale/en.json",
@@ -67,40 +67,41 @@
     "facebook": false,
     "googleplus": false,
     "bitcointalk": false,
-    "website": false,
+    "website": true,
     "slack": false,
-    "github": false,
+    "github": true,
     "search": true,
     "movement": true,
+    "masternodes": true,
+    "coininfo": true,
+    "coinmarketcap": true,
     "network": true
   },
 
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
-    "show_hashrate": true,
-    "difficulty": "POW",
+    "show_hashrate": false,
+    "difficulty": "POS",
     "last_txs": 100
   },
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "00000000001b8c30360db57b575b3c2bf668b0ed50683f567afd47ae1773efb8",
-    "txhash": "285feead54e322aa69f649c4078766171df358a12f5f1517d61f303780e25511",
-    "address": "CaxX1HVWzbQ516w61XbtHR63vNmp2mvLMZ"
+    "blockindex": 25616,
+    "blockhash": "2605cfb26456f79a466e298c948c6809982c78268c803054e6fb61140015f2d4",
+    "txhash": "3d54d3f7ad09617404507261f26e65715671eda8978ddf184580457edefb6ff1",
+    "address": "D2951jbCCunpUMzm2UwxKsFykyZUE8dmmk"
   },
 
   // market settings
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "CHC",
+    "coin": "EYCO",
     "exchange": "BTC",
-    "enabled": ["cryptopia"],
-    "cryptopia_id": "2186",
-    "ccex_key" : "Get-Your-Own-Key",
-    "coinexchange_id": "18",
-    "default": "cryptopia"
+    "enabled": ["coinexchange"],
+    "coinexchange_id": "1042",
+    "default": "coinexchange"
   },
 
   // richlist/top100 settings
@@ -114,23 +115,23 @@
   // low flag: greater than this value flagged yellow
   // high flag: greater than this value flagged red
   "movement": {
-    "min_amount": 100,
-    "low_flag": 1000,
-    "high_flag": 5000
+    "min_amount": 0,
+    "low_flag": 100000,
+    "high_flag": 50000000
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "suprnurd",
+  "twitter": "TechEyco",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
   "bitcointalk": "yourbitcointalktopicvalue",
-  "github": "yourgithubusername/yourgithubrepo",
+  "github": "EyCoTech/Eyco",
   "slack": "yourfullslackinviteurl",
-  "website": "yourfullwebsiteurl",
+  "website": "https://eyco-tech.net/",
 
   //genesis
-  "genesis_tx": "fa6ef9872494fa9662cf0fecf8c0135a6932e76d7a8764e1155207f3205c7c88",
-  "genesis_block": "00000f639db5734b2b861ef8dbccc33aebd7de44d13de000a12d093bcc866c64",
+  "genesis_tx": "c23ac15dfd0fdd3eeb684a97e6329e88e048579eb7d3d108b8678935ba5d05ee",
+  "genesis_block": "64fa0bfdd6613ee89198d680567d858765ced5c1fb02d7312ac71609cf0ca6d5",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -139,7 +140,7 @@
   "txcount": 100,
 
   //show total sent & received on address page (set false if PoS)
-  "show_sent_received": true,
+  "show_sent_received": false,
 
   // how to calculate current coin supply
   // COINBASE : total sent from coinbase (PoW)
